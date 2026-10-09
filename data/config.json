@@ -3,7 +3,7 @@
     "provider": "openai",
     "model": "deepseek-flash",
     "api_key_env": "OPENAI_API_KEY",
-    "base_url": "https://api.deepseek.com",
+    "base_url": "https://api.deepseek.com/v1",
     "languages": ["en", "zh"],
     "temperature": 0.3,
     "max_tokens": 4096,
