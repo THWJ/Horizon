@@ -34,7 +34,7 @@
   },
   "sources": {
     "github": [
-      "enabled": true,
+      "enabled": false,
       {
         "type": "user_events",
         "username": "karpathy",
