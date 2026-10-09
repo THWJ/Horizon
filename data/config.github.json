@@ -125,18 +125,6 @@
         "fetch_limit": 10
       },
       {
-        "name": "OpenAI News",
-        "url": "https://openai.com/news/rss.xml",
-        "category": "ai",
-        "fetch_limit": 10
-      },
-      {
-        "name": "Anthropic News",
-        "url": "https://rsshub.bestblogs.dev/anthropic/news",
-        "category": "ai",
-        "fetch_limit": 10
-      },
-      {
         "name": "Google DeepMind News",
         "url": "https://deepmind.com/blog/feed/basic/",
         "category": "ai",
