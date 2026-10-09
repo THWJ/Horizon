@@ -66,52 +66,114 @@
       "profile": "tech-news"
     },
     "rss": [
+            {
+        "name": "36氪",
+        "url": "https://www.36kr.com/feed",
+        "category": "business",
+        "fetch_limit": 15
+      },
       {
-        "name": "Simon Willison",
+        "name": "虎嗅",
+        "url": "https://rss.huxiu.com/",
+        "category": "business",
+        "fetch_limit": 15
+      },
+      {
+        "name": "钛媒体",
+        "url": "https://www.tmtpost.com/feed",
+        "category": "business",
+        "fetch_limit": 15
+      },
+      {
+        "name": "IT之家",
+        "url": "https://www.ithome.com/rss/",
+        "category": "tech",
+        "fetch_limit": 20
+      },
+      {
+        "name": "奇客Solidot",
+        "url": "https://www.solidot.org/index.rss",
+        "category": "tech",
+        "fetch_limit": 15
+      },
+      {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/feed/",
+        "category": "tech",
+        "fetch_limit": 10
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/feed/",
+        "category": "tech",
+        "fetch_limit": 10
+      },
+      {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/rss/index.xml",
+        "category": "tech",
+        "fetch_limit": 10
+      },
+      {
+        "name": "Ars Technica",
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "category": "tech",
+        "fetch_limit": 10
+      },
+      {
+        "name": "OpenAI News",
+        "url": "https://openai.com/news/rss.xml",
+        "category": "ai",
+        "fetch_limit": 10
+      },
+      {
+        "name": "Anthropic News",
+        "url": "https://rsshub.bestblogs.dev/anthropic/news",
+        "category": "ai",
+        "fetch_limit": 10
+      },
+      {
+        "name": "Google DeepMind News",
+        "url": "https://deepmind.com/blog/feed/basic/",
+        "category": "ai",
+        "fetch_limit": 10
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "category": "ai",
+        "fetch_limit": 10
+      },
+      {
+        "name": "Simon Willison's Weblog",
         "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
-        "category": "ai-tools",
-        "profile": "tech-news"
+        "category": "ai",
+        "fetch_limit": 10
       },
       {
-        "name": "vLLM Blog",
-        "url": "https://vllm.ai/blog/rss.xml",
-        "enabled": true,
-        "category": "llm-inference",
-        "profile": "tech-blog",
-        "content_extractor": "trafilatura"
+        "name": "机器之心",
+        "url": "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml",
+        "category": "ai",
+        "fetch_limit": 15
       },
       {
-        "name": "Sean Goedecke",
-        "url": "https://www.seangoedecke.com/rss.xml",
-        "enabled": true,
-        "category": "software-engineering",
-        "profile": "tech-blog",
-        "content_extractor": "trafilatura"
+        "name": "量子位",
+        "url": "https://www.qbitai.com/feed",
+        "category": "ai",
+        "fetch_limit": 15
       },
       {
-        "name": "CNBC Finance",
-        "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664",
-        "enabled": true,
-        "category": "finance",
-        "profile": "finance-news",
-        "content_extractor": "trafilatura"
+        "name": "BBC News — World",
+        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "category": "politics",
+        "fetch_limit": 10
       },
       {
-        "name": "NVIDIA CUDA Technical Blog",
-        "url": "https://developer.nvidia.com/blog/tag/cuda/feed/",
-        "enabled": true,
-        "category": "cuda",
-        "profile": "tech-blog",
-        "content_extractor": "trafilatura"
-      },
-      {
-        "name": "LWN.net (subscriber full-text)",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": false,
-        "category": "linux",
-        "profile": "tech-news"
-      }
+        "name": "World news | The Guardian",
+        "url": "https://www.theguardian.com/world/rss",
+        "category": "politics",
+        "fetch_limit": 10
+      }      
     ],
     "reddit": {
       "enabled": true,
@@ -129,7 +191,7 @@
       "users": [
         {
           "username": "iamthatis",
-          "enabled": true,
+          "enabled": false,
           "sort": "new",
           "fetch_limit": 10,
           "profile": "tech-news"
@@ -174,7 +236,7 @@
       "profile": "tech-news"
     },
     "telegram": {
-      "enabled": true,
+      "enabled": false,
       "channels": [
         {
           "channel": "zaihuapd",
