@@ -19,15 +19,19 @@
     "default_profile": "tech-news",
     "profile_settings": {
       "tech-news": {
-        "threshold": 7.0,
+        "threshold": 7.5,
         "topic_dedup": true
       },
       "tech-blog": {
-        "threshold": 4.0,
-        "topic_dedup": false
+        "threshold": 6.5,
+        "topic_dedup": true
       },
       "finance-news": {
-        "threshold": 7.0,
+        "threshold": 7.5,
+        "topic_dedup": true
+      },
+      "ai-creator": {
+        "threshold": 7.5,
         "topic_dedup": true
       }
     }
@@ -64,107 +68,67 @@
       }
     ],
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 30,
       "min_score": 150,
       "profile": "tech-news"
     },
     "rss": [
       {
-        "name": "36氪",
-        "url": "https://www.36kr.com/feed",
-        "category": "business",
-        "fetch_limit": 15
-      },
-      {
-        "name": "虎嗅",
-        "url": "https://rss.huxiu.com/",
-        "category": "business",
-        "fetch_limit": 15
-      },
-      {
-        "name": "钛媒体",
-        "url": "https://www.tmtpost.com/feed",
-        "category": "business",
-        "fetch_limit": 15
-      },
-      {
-        "name": "IT之家",
-        "url": "https://www.ithome.com/rss/",
-        "category": "tech",
-        "fetch_limit": 20
-      },
-      {
-        "name": "奇客Solidot",
-        "url": "https://www.solidot.org/index.rss",
-        "category": "tech",
-        "fetch_limit": 15
-      },
-      {
-        "name": "MIT Technology Review",
-        "url": "https://www.technologyreview.com/feed/",
-        "category": "tech",
-        "fetch_limit": 10
-      },
-      {
-        "name": "TechCrunch",
-        "url": "https://techcrunch.com/feed/",
-        "category": "tech",
-        "fetch_limit": 10
-      },
-      {
-        "name": "The Verge",
-        "url": "https://www.theverge.com/rss/index.xml",
-        "category": "tech",
-        "fetch_limit": 10
-      },
-      {
-        "name": "Ars Technica",
-        "url": "https://feeds.arstechnica.com/arstechnica/index",
-        "category": "tech",
-        "fetch_limit": 10
-      },
-      {
-        "name": "Google DeepMind News",
-        "url": "https://deepmind.com/blog/feed/basic/",
-        "category": "ai",
-        "fetch_limit": 10
+        "name": "arXiv AI",
+        "url": "https://rss.arxiv.org/rss/cs.AI",
+        "enabled": true,
+        "category": "ai-research",
+        "profile": "tech-news"
       },
       {
         "name": "Hugging Face Blog",
         "url": "https://huggingface.co/blog/feed.xml",
-        "category": "ai",
-        "fetch_limit": 10
+        "enabled": true,
+        "category": "ai-engineering",
+        "profile": "tech-blog"
       },
       {
-        "name": "Simon Willison's Weblog",
+        "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
-        "category": "ai",
-        "fetch_limit": 10
+        "enabled": true,
+        "category": "ai-engineering",
+        "profile": "tech-blog"
       },
       {
-        "name": "机器之心",
-        "url": "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml",
-        "category": "ai",
-        "fetch_limit": 15
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "enabled": true,
+        "category": "ai-business",
+        "profile": "ai-creator"
       },
       {
-        "name": "量子位",
-        "url": "https://www.qbitai.com/feed",
-        "category": "ai",
-        "fetch_limit": 15
+        "name": "US-China Relations",
+        "url": "https://news.google.com/rss/search?q=%28US+China+relations%29+OR+%28US+China+trade%29&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true,
+        "category": "geopolitics",
+        "profile": "tech-news"
       },
       {
-        "name": "BBC News — World",
-        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-        "category": "politics",
-        "fetch_limit": 10
+        "name": "Global Geopolitics",
+        "url": "https://news.google.com/rss/search?q=%28geopolitical+conflict%29+OR+%28energy+security%29+OR+%28global+supply+chain%29&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true,
+        "category": "geopolitics",
+        "profile": "tech-news"
       },
       {
-        "name": "World news | The Guardian",
-        "url": "https://www.theguardian.com/world/rss",
-        "category": "politics",
-        "fetch_limit": 10
+        "name": "US Macro and Fed",
+        "url": "https://news.google.com/rss/search?q=%28Federal+Reserve%29+OR+%28US+inflation%29+OR+%28US+Treasury+yields%29&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true,
+        "category": "macro-finance",
+        "profile": "finance-news"
+      },
+      {
+        "name": "China Economy and Finance",
+        "url": "https://news.google.com/rss/search?q=%28China+economy%29+OR+%28China+financial+markets%29+OR+%28People%27s+Bank+of+China%29&hl=en-US&gl=US&ceid=US:en",
+        "enabled": true,
+        "category": "macro-finance",
+        "profile": "finance-news"
       }
     ],
     "reddit": {
