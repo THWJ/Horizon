@@ -45,13 +45,6 @@
     },
     "rss": [
       {
-        "name": "arXiv AI",
-        "url": "https://rss.arxiv.org/rss/cs.AI",
-        "enabled": true,
-        "category": "ai-research",
-        "profile": "tech-news"
-      },
-      {
         "name": "Hugging Face Blog",
         "url": "https://huggingface.co/blog/feed.xml",
         "enabled": true,
